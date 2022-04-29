@@ -7,6 +7,7 @@ const jwt = require('jsonwebtoken');
 const fetchUser = require("../Middleware/fetchUser");
 // Route 1 :Create new user with the help of this logic /api/auth/createuser
 const jwt_SECRET = "my name is @khan";
+
 router.post('/createuser',[
    //Validation for user 
    body('email','Enter valid email').isEmail(),
